@@ -1,4 +1,23 @@
-button{
+
+.Contenido{
+   font-family: 'Times New Roman', Times, serif;
+   font-size: large;
+}
+
+@media screen {
+   .Contenido{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    bottom: 20%;
+
+   }
+   input{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+    font-size: large;
+   }
+   button{
     background: #620D4F;
     border: none;
     padding: 12px;
@@ -8,16 +27,5 @@ button{
     border-radius: 20px;
    width: 200px;
 }
-
-input{
-    background-color: #D9D9D9;
 }
 
-.Contenido{
-   font-family: inter;
-   font-size: large;
-}
-
-@media screen and (min-width: 480px){
-
-}
