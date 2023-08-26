@@ -1,19 +1,23 @@
-button#Enviar{
-    background: #1f53c5;
+button{
+    background: #620D4F;
     border: none;
     padding: 12px;
     color: white;
     margin: 16px 0;
     font-size: 16px;
-    
+    border-radius: 20px;
+   width: 200px;
 }
 
-button#Limpiar{
-    background: #1f53c5;
-    border: none;
-    padding: 12px;
-    color: white;
-    margin: 16px 0;
-    font-size: 16px;
+input{
+    background-color: #D9D9D9;
+}
+
+.Contenido{
+   font-family: inter;
+   font-size: large;
+}
+
+@media screen and (min-width: 480px){
 
 }

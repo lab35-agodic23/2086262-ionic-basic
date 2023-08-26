@@ -1,11 +1,16 @@
+var campoTexto = document.getElementById('InputUsuario')
 
-
-var campoTexto = document.getElementById('mitexto1')
-
-function mostrarAlerta(){
-    alert(campoTexto.value);
+function mostrarSesion(){
+     var Mensaje = document.createElement("p");
+     Mensaje.innerHTML = "Sesion iniciada" + campoTexto.value;
+     var Contenido = document.getElementById("Contenido");
+     Contenido.appendChild(Mensaje);
 }
 
-function LimpiarTexto(){
-    campoTexto.value="";
+function Registrarme(){
+    var Dato = document.createElement("p");
+    Dato.innerHTML = "Registro Exitoso" + campoTexto.value;
+    var Registr = document.getElementById("Registr");
+    Registr.appendChild(Dato);
+    
 }
