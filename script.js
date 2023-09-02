@@ -1,16 +1,13 @@
-var campoTexto = document.getElementById('InputUsuario')
+let Monto = document.getElementById('Monto');
+let Gasto = document.getElementById('Gasto');
+let GastoArreglo=[];
 
-function mostrarSesion(){
-     var Mensaje = document.createElement("p");
-     Mensaje.innerHTML = "Sesion iniciada" + campoTexto.value;
-     var Contenido = document.getElementById("Contenido");
-     Contenido.appendChild(Mensaje);
-}
+function agregarArreglo(){
+    let newgasto = `${Gasto.value} $ ${Monto.value}`;
 
-function Registrarme(){
-    var Dato = document.createElement("p");
-    Dato.innerHTML = "Registro Exitoso" + campoTexto.value;
-    var Registr = document.getElementById("Registr");
-    Registr.appendChild(Dato);
-    
+    GastoArreglo.push(newgasto);
+    console.log(GastoArreglo);
+
+    Gasto.value="";
+    Monto.Value="";
 }
