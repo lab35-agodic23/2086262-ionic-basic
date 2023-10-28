@@ -40,7 +40,7 @@ export class ListaAlumnosComponent  implements OnInit {
     Presente: false,
     Nombre: '',
   };
-   
+  
   agregarAlumno(): void {
     this.alumnos.push(this.nuevoAlumno.Nombre);
     this.nuevoAlumno.Nombre = '';
