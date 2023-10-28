@@ -1,4 +1,5 @@
 import { Component, OnInit,} from '@angular/core';
+import Alumno from 'src/app/alumno.model.ts'
 
 @Component({
   selector: 'app-lista-alumnos',
@@ -36,5 +37,5 @@ export class ListaAlumnosComponent  implements OnInit {
       },
     },
   ];
-
+   
 }
