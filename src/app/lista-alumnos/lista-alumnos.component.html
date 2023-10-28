@@ -1,10 +1,10 @@
 <form #templateForm="ngForm" (ngSubmit)="agregarAlumno()">
   <ion-item>
     <ion-label position="floating">Nombre del alumno</ion-label>
-    <ion-input type="text" [(ngModel)]="nuevoAlumno.nombre" name="nombre" required></ion-input>
+    <ion-input type="text" [(ngModel)]="nuevoAlumno.Nombre" name="Nombre" required></ion-input>
   </ion-item>
   <ion-item>
-    <ion-checkbox [(ngModel)]="nuevoAlumno.presente" name="presente" required>Presente</ion-checkbox>
+    <ion-checkbox [(ngModel)]="nuevoAlumno.Presente" name="Presente" required>Presente</ion-checkbox>
   </ion-item>
   <ion-button type="submit">Agregar</ion-button>
 </form>
