@@ -1,4 +1,5 @@
 import { Component, OnInit,} from '@angular/core';
+import { Alumno } from "../alumno.model";
 @Component({
   selector: 'app-lista-alumnos',
   templateUrl: './lista-alumnos.component.html',
@@ -35,5 +36,14 @@ export class ListaAlumnosComponent  implements OnInit {
       },
     },
   ];
+  nuevoAlumno: Alumno = {
+    Presente: false,
+    Nombre: '',
+  };
    
+  agregarAlumno(): void {
+    this.alumnos.push(this.nuevoAlumno.Nombre);
+    this.nuevoAlumno.Nombre = '';
+    this.nuevoAlumno.Presente = false;
+  }
 }
