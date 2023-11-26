@@ -35,7 +35,7 @@ export class FotoServiceService {
 
       this.fotos.unshift(newPhoto);
     } catch (error) {
-      console.error('Error al capturar la foto:', error);
+      console.error('Error al capturar la foto:', error); //Fallido todo 
     }
   }
 }
