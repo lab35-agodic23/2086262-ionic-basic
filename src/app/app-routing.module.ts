@@ -18,7 +18,7 @@ const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '/productos',
+    redirectTo: 'camara',
     pathMatch: 'full'
   },
 
