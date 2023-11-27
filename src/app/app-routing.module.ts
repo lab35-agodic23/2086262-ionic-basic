@@ -7,6 +7,12 @@ import {CamaraComponent} from './camara/camara.component';
 
 const routes: Routes = [
   {
+    path: 'camara',
+    redirectTo: 'camara',
+    pathMatch: 'full'
+  },
+
+  {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
@@ -16,12 +22,7 @@ const routes: Routes = [
     component: ProductosComponent,
   },
 
-  {
-    path: '',
-    redirectTo: 'camara',
-    pathMatch: 'full'
-  },
-
+  
   {
     path: 'producto/:id',
     component: ProductoDetalleComponent,
