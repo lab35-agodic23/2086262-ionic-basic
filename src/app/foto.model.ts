@@ -1,4 +1,4 @@
 export interface Foto {
-    filepath: string | undefined; 
+    filepath: string; 
     webViewPath?: string;
 }
